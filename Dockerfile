@@ -106,7 +106,7 @@ RUN git clone https://github.com/apache/nutch-webapp.git nutch_webapp && \
 
 # Arrange necessary setup for supervisord
 RUN mkdir -p /var/log/supervisord
-COPY ./config/supervisord_startserver_webapp.conf /etc/supervisord.conf
+COPY ./supervisord_startserver_webapp.conf /etc/supervisord.conf
 
 # Expose ports for server and webapp, these can only be accessed if
 # the same ports are published when the container is run.
