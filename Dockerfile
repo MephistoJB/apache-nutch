@@ -115,5 +115,5 @@ EXPOSE $WEBAPP_PORT
 
 ENTRYPOINT [ "supervisord", "--nodaemon", "--configuration", "/etc/supervisord.conf" ]
 
-FROM branch-version-$BUILD_MODE AS final
+#FROM branch-version-$BUILD_MODE AS final
 RUN echo "Successfully built image, see https://s.apache.org/m5933 for guidance on running a container instance."
